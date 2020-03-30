@@ -9,9 +9,8 @@
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Logo icon -->
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/img/logo.png">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -55,7 +54,8 @@
               <li><a href="#response_reducing">Reducing</a></li>
             </ul>
           </li>
-          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#photo_gallery">Photo gallery</a></li>
+          <li><a href="#video_gallery">Video gallery</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav><!-- .nav-menu -->
@@ -200,7 +200,7 @@
 
         <div class="row">
           <div class="col-12" data-aos="fade-right">
-            <img src="./assets/img/feedback1.jpg" class="img-fluid float-right ml-2" alt="North pole ice" class="img-right">
+            <img src="./assets/img/feedback1.jpg" class="img-fluid float-right ml-2" alt="North pole ice">
             <p>The response of the climate system to an initial forcing is increased by self-reinforcing feedbacks and reduced by balancing feedbacks. The main balancing feedback to global temperature change is radiative cooling to space as infrared radiation, which increases strongly with increasing temperature. The main reinforcing feedbacks are the water vapour feedback, the ice–albedo feedback, and probably the net effect of clouds. Uncertainty over feedbacks is the major reason why different climate models project different magnitudes of warming for a given amount of emissions. As air gets warmer, it can hold more moisture. After an initial warming due to emissions of greenhouse gases, the atmosphere will hold more water. As water is a potent greenhouse gas, this further heats the climate: the water vapour feedback. The reduction of snow cover and sea ice in the Arctic reduces the albedo of the Earth's surface.</p>
             <p>More of the Sun's energy is now absorbed in these regions, contributing to Arctic amplification, which has caused Arctic temperatures to increase at more than twice the rate of the rest of the world. Arctic amplification also causes methane to be released as permafrost melts, which is expected to surpass land use changes as the second strongest anthropogenic source of greenhouse gases by the end of the century. Cloud cover may change in the future. If cloud cover increases, more sunlight will be reflected back into space, cooling the planet. Simultaneously, the clouds enhance the greenhouse effect, warming the planet. The opposite is true if cloud cover decreases. It depends on the cloud type and location which process is more important. Overall, the net feedback over the industrial era has probably been self-reinforcing. Roughly half of each year's CO2 emissions have been absorbed by plants on land and in oceans. Carbon dioxide and an extended growing season have stimulated plant growth making the land carbon cycle a balancing feedback. Climate change also increases droughts and heat waves that inhibit plant growth, which makes it uncertain whether this balancing feedback will persist in the future. Soils contain large quantities of carbon and may release some when they heat up. As more CO2 and heat are absorbed by the ocean, it is acidifying and ocean circulation can change, changing the rate at which the ocean can absorb atmospheric carbon. A concern is that self-reinforcing feedbacks will lead to a tipping point, where global temperatures transition to a hothouse climate state even if greenhouse gas emissions are reduced or eliminated.A 2018 study tried to identify such a planetary threshold for self-reinforcing feedbacks and found that even a 2 °C (3.6 °F) increase in temperature over pre-industrial levels may be enough to trigger such a hothouse Earth scenario.</p>
           </div>
@@ -396,23 +396,27 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form" data-aos="fade-up">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up">
               <div class="form-row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <label for="name">Your name</label>
+                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <label for="email">Your email</label>
+                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 <div class="validate"></div>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <label for="message"></label>
+                  <textarea class="form-control" name="message" id="message" rows="5"></textarea>
                 <div class="validate"></div>
               </div>
               <div class="mb-3">
@@ -432,6 +436,14 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container footer-bottom clearfix">
+      <div class="credits">
+        Global Warming
+      </div>
+    </div>
+  </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 

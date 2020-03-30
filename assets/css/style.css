@@ -159,7 +159,7 @@ img {
   visibility: hidden;
   padding: 10px 0;
   background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
   transition: ease all 0.3s;
 }
 
@@ -479,7 +479,6 @@ section {
 }
 
 .about .image {
-  background: url("../img/about.jpg") center center no-repeat;
   background-size: cover;
   min-height: 400px;
 }
@@ -523,7 +522,7 @@ section {
   background: #fff;
   border-top: 4px solid #fff;
   padding: 30px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   margin-top: -60px;
   transition: 0.3s;
 }
@@ -622,7 +621,6 @@ section {
   font-weight: 600;
   line-height: 20px;
   color: #444444;
-  margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -780,7 +778,7 @@ section {
 .pricing .box {
   padding: 40px;
   margin-bottom: 30px;
-  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+  box-shadow: 0 0 30px rgba(73, 78, 92, 0.15);
   background: #fff;
   text-align: center;
   position: relative;
@@ -1024,7 +1022,7 @@ section {
   font-size: 14px;
 }
 
-.contact .php-email-form input::focus, .contact .php-email-form textarea::focus {
+.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
   background-color: #fdc134;
 }
 
@@ -1070,7 +1068,6 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: url("../img/footer-bg.jpg") center center no-repeat;
   color: #fff;
   font-size: 14px;
   position: relative;
@@ -1105,7 +1102,7 @@ section {
 }
 
 #footer .footer-top p {
-  font-size: 15;
+  font-size: 15px;
   font-style: italic;
   margin: 30px 0 0 0;
   padding: 0;
@@ -1122,7 +1119,7 @@ section {
   padding: 6px 10px;
   position: relative;
   border-radius: 50px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
 
@@ -1145,7 +1142,7 @@ section {
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
@@ -1200,6 +1197,6 @@ section {
   #footer .copyright, #footer .credits {
     padding: 5px;
     float: none;
-    text-align: ceneter;
+    text-align: center;
   }
 }
